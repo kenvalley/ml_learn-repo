@@ -86,7 +86,7 @@ def get_milk():
     print('Come back home')
     
 
-# My solution to coding exercise part 1
+# My solution to coding exercise - part 1
 tracker = 0
 
 def moveForwards():
@@ -128,4 +128,29 @@ def get_milk_again(amount, destination):
 # Calling the function
 get_milk_again(30, "mama's shop")
 
+# Concatenating lists
+concatenate_lists(['a', 'b', 'c'], [1,2,3])
 
+# Data visualization with Python
+
+#1.
+plt.title('Title of our graph', fontsize=17)
+plt.xlabel("Time in mins", fontsize=14)
+plt.ylabel("Tissue LSD ppm", fontsize=14)
+plt.text(x=0, y=35,s='ERE!')
+plt.plot(time, avg_mth)
+plt.xticks(fontsize=14)
+
+#2.
+%matplotlib inline
+
+plt.style.use('fivethirtyeight')
+plt.scatter(LSD, score, color='g', s=100, alpha=0.9)
+plt.title('Arithmetic vs LSD-25', fontsize=14)
+plt.xlabel('Tissue LSD ppm', fontsize=14)
+plt.ylabel('Performance Score', fontsize=17)
+plt.ylim(25, 85)
+plt.xlim(1,6.7)
+plt.plot(LSD, predict, color='r', linewidth=4)
+
+#### END ####################################################
