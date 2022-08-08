@@ -63,11 +63,15 @@ scores.sort(reverse=True)
 scores[0:3]
 
 
-# Read our csv file and save it to the variable named 'data'. This is possible because we already imported 'pandas'
+# Read csv file and save it to the variable named 'data'. This is possible because we already imported 'pandas'
 data = pd.read_csv('lsd_math_score_data.csv')
 
-# Manipulating our DataFrame; print out, check type, print out a particular column (via column name, instead of index)
+# Manipulating the DataFrame; print out a particular column (via column name, instead of index)
 only_math_scores = data['Avg_Math_Test_Score']
+print(only_math_scores)
+
+#### OR ###
+print(data['Avg_Math_Test_Score'])
 
 # Setting the values of a particular column
 data['High_Score'] = '302
@@ -84,9 +88,8 @@ def get_milk():
     print('Go to the shop')
     print('Buy milk')
     print('Come back home')
-    
 
-# My solution to coding exercise - part 1
+# My solution to the coding exercise - part 1
 tracker = 0
 
 def moveForwards():
