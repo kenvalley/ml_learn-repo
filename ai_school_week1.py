@@ -100,7 +100,6 @@ def turnRight():
     print('turning right')
     
 def move():
-    #Delete this line and replace with your code. 
     moveForwards()
     turnRight()
     turnRight()
